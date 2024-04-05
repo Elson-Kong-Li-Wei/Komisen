@@ -1,0 +1,23 @@
+jumlah = 0
+jualan = 0
+komisen = 0
+ulang = "Y"
+while ulang == "Y":
+  jualan = float(input("Masukkan jumlah jualan:RM"))
+  if jualan > 80:
+      kadarkomisen = 0.055
+  elif jualan > 70:
+      kadarkomisen = 0.055
+  elif jualan > 60:
+      kadarkomisen = 0.04
+  elif jualan > 50:
+      kadarkomisen = 0.03
+  else:
+      kadarkomisen = 0.02
+  komisen = jualan * kadarkomisen
+  print("Komisen anda ialah RM",round(komisen,2))
+  jumlah = jumlah + komisen
+  ulang = input("Masukkan Y untuk terus atau N untuk berhenti")
+  
+print("\n Jumlah komisen ialah RM",round(jumlah,2))
+print("Terima Kasih")
